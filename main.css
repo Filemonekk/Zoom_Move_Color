@@ -1,74 +1,54 @@
-*{
-     background-color: #861657;
-    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);;
+* {
+    background-color: #861657;
+    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{ font-family: 'Comfortaa', cursive;
-font-family: 'Nunito Sans', sans-serif;
-
+body { 
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-button 
-{
-   
-width: 120px;
-position: absolute;
-top: 50px;
-transform: translateX(-50%);
-padding: 10px 30px;
-background-color: none;
-color: white;
-font-weight: bold;
-border-color: white 3px;
-border-radius: 5px;
-letter-spacing: 2px;
-text-transform: uppercase;
-cursor: pointer;
-transition: 1s;
-
+button {
+    position: absolute;
+    width: 120px;
+    top: 50px;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    background-color: none;
+    color: white;
+    font-weight: bold;
+    border-color: white 3px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s;
 }
 
-
-.btn-zoom{
+.btn-zoom {
     left:25%
-
 }
 
-.btn-move{
+.btn-move {
     left:50%
-
 }
 
-
-.btn-color
-
-{
+.btn-color {
     left:75%
-
 }
 
-.btn-zoom:hover{  
-
+.btn-zoom:hover,
+.btn-move:hover,
+.btn-color:hover {  
     Background-color: white; 
     color: black;
 }
 
-.btn-move:hover{  
-
-     Background-color: white; 
-    color: black;}
-
-
- .btn-color:hover{  
-
-     Background-color: white; 
-     color: black;}
-
-
-div{
+div {
+    display: block;
     position: absolute;
     top: 150px;
     transform: translateX(-50%);
@@ -77,58 +57,41 @@ div{
     border-radius: 25px;
     border: solid 2px;
     transition: 0.5s;
-    
-
 }
 
-
-
-.square-blue{
-    background-color: blue;
+.square-blue {
     left:25%;
+    background-color: blue;
     border-color: rgba(2, 2, 94, 0.91);
     box-shadow: 0 0 20px 10px blue;
-  
-
-
 }
 
-.square-red{
-left:50%;
-background-color: red;
-border-color: rgb(138, 6, 6);
-box-shadow: 0 0 20px 10px red;
+.square-red {
+    left:50%;
+    background-color: red;
+    border-color: rgb(138, 6, 6);
+    box-shadow: 0 0 20px 10px red;
 }
 
-
-.square-green
-
-{
-left:75%;
-background-color: green;
-border-color: rgb(5, 83, 5);
-box-shadow: 0 0 20px 10px green;
+.square-green {
+    left:75%;
+    background-color: green;
+    border-color: rgb(5, 83, 5);
+    box-shadow: 0 0 20px 10px green;
 }
 
 
-
-.btn-zoom:hover~div{
+.btn-zoom:hover ~div {
     width: 150px;
-    height: 150px;
-
-   
+    height: 150px;  
 }
 
-.btn-move:hover~div{
-  
-	top: 300px;
-
+.btn-move:hover ~div {
+    top: 300px;
 }
-
 
 .btn-color:hover ~div{
     background-color: black;
     border-color: white;
     box-shadow: none;
-
 }
